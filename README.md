@@ -4,8 +4,8 @@ Simple biz flow or data flow for business orchestration
 # Get started
 find the example in `samples` foler.
 
-## difine components
-Work
+## 1.difine components
+`Work`
 ```
 @Service("recall")
 public class RecallWork implements Work<MyPayload, MyPayload> {
@@ -20,7 +20,7 @@ public class RecallWork implements Work<MyPayload, MyPayload> {
 }
 
 ```
-Merge
+`Merge`
 ```
 @Service("myMerge")
 public class MyMerge implements Merge<MyPayload,MyPayload> {
@@ -31,7 +31,7 @@ public class MyMerge implements Merge<MyPayload,MyPayload> {
     }
 }
 ```
-Select
+`Select`
 ```
 @Service("mySelect")
 public class MySelect implements Select<MyPayload> {
@@ -49,7 +49,7 @@ public class MySelect implements Select<MyPayload> {
 ```
 
 
-## config flow
+## 2.config flow
 ```
 <flow-config>
     <flows>
@@ -99,7 +99,7 @@ public class MySelect implements Select<MyPayload> {
 </flow-config>
 ```
 
-## load flow
+## 3.load flow
 ```
 // load from local file
 FlowManager.reloadFromFile("flow.xml", true);
@@ -107,13 +107,15 @@ FlowManager.reloadFromFile("flow.xml", true);
 FlowManager.reloadFromStr("...", true);
 ```
 
-## run flow
+## 4.run flow
 ```
 // init your business context
 FlowContext flowContext = new MyFlowContext(new User().setMid(0).setLabel("super"), 0);
 // start run flow f1
 MyPayload execute = FlowManager.execute(flowContext, "f1");
 ```
+
+# monitor
 
 ## digest log
 ```
