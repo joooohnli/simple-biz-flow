@@ -11,6 +11,9 @@ import com.simple.bizFlow.core.node.Node;
 public class FlowExecutor implements NodeExecutor<Flow> {
     @Override
     public Payload execute(FlowContext context, Flow flow, Payload input) {
+        if (flow.getNodes() == null) {
+            return input;
+        }
 
         Payload output = null;
         for (Node flowNode : flow.getNodes()) {
