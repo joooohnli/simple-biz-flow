@@ -1,0 +1,46 @@
+<flow-config>
+    <flows>
+        <flow id="f1">
+            <nodes>
+                <work-node id="w1" bean="recall"/>
+                <parallel-node id="p1" timeoutMillSec="3000">
+                    <flows>
+                        <flow id="pf1">
+                            <nodes>
+                                <work-node id="w2" bean="sort1">
+                                    <properties>
+                                        <property key="x" value="1234"/>
+                                    </properties>
+                                </work-node>
+                            </nodes>
+                        </flow>
+                        <flow id="pf2">
+                            <nodes>
+                                <work-node id="w3" bean="sort1">
+                                    <properties>
+                                        <property key="x" value="5678"/>
+                                    </properties>
+                                </work-node>
+                                <work-node id="w4" bean="sort2"/>
+                            </nodes>
+                        </flow>
+                    </flows>
+                    <merge id="m1" bean="myMerge"/>
+                </parallel-node>
+                <select-node id="s1" bean="mySelect">
+                    <properties>
+                        <property key="default" value="1"/>
+                    </properties>
+                    <flows>
+                        <flow id="sf1">
+                            <nodes>
+                                <work-node id="w5" bean="sort2"/>
+                            </nodes>
+                        </flow>
+                        <flow id="sf2"/>
+                    </flows>
+                </select-node>
+            </nodes>
+        </flow>
+    </flows>
+</flow-config>
