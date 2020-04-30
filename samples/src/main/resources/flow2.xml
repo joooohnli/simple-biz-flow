@@ -1,0 +1,75 @@
+<flow-config>
+    <flows>
+        <flow id="flow">
+            <nodes>
+                <work-node id="w0-1" bean="queryUserInfoWork" desc="获取用户信息"/>
+                <work-node id="w0-2" bean="recallWork" desc="召回"/>
+                <select-node id="s1" bean="flowSelector" desc="流程选择">
+                    <flows>
+                        <flow id="f1" desc="新注册流程">
+                            <nodes>
+                                <parallel-node id="p1" desc="并行排序">
+                                    <flows>
+                                        <flow id="f1-1" desc="全量用户分支 ">
+                                            <nodes>
+                                                <work-node id="w1-1-1" bean="accurateSortWork" desc="精排"> <properties><property key="sortId" value="2300"/><property key="topN" value="200"/> </properties></work-node>
+                                            </nodes>
+                                        </flow>
+                                        <flow id="f1-2" desc="老用户分支">
+                                            <nodes>
+                                                <!-- 粗排 -->
+                                                <work-node id="w1-2-1" bean="newRegOldUserRoughSortWork" desc="粗排"/>
+                                                <!-- 精排 -->
+                                                <work-node id="w1-2-2" bean="accurateSortWork" desc="精排"/>
+                                            </nodes>
+                                        </flow>
+                                        <flow id="f1-3" desc="新用户分支">
+                                            <nodes>
+                                                <!-- 粗排 -->
+                                                <work-node id="w1-3-1" bean="newRegUserRoughSortWork" desc="粗排"/>
+                                                <!-- 精排 -->
+                                                <work-node id="w1-3-2" bean="accurateSortWork" desc="精排"> <properties><property key="topN" value="100"/><property key="sortId" value="2300"/></properties></work-node>
+                                                <!-- 重排 -->
+                                                <work-node id="w1-3-3" bean="newRegRepeatSortWork" desc="重排"> <properties><property key="sortId" value="2300"/></properties></work-node>
+                                            </nodes>
+                                        </flow>
+                                    </flows>
+                                    <merge id="m1" bean="newRegMergeWork" desc="分支合并"/>
+                                </parallel-node>
+                                <work-node id="replenish" bean="replenishWork" desc="补足"/>
+                            </nodes>
+                        </flow>
+                        <flow id="f2" desc="多路粗排流程">
+                            <nodes>
+                                <parallel-node id="p2" desc="并行排序">
+                                    <flows>
+                                        <flow id="f2-1"><!-- 单向粗排 -->
+                                            <nodes>
+                                                <work-node id="w2-1-1" bean="oneWayRoughSortWork" desc="单向粗排"/>
+                                            </nodes>
+                                        </flow>
+                                        <!-- 双向粗排 -->
+                                        <flow id="f2-2">
+                                            <nodes>
+                                                <work-node id="w2-2-1" bean="twoWayRoughSortWork" desc="双向粗排"/>
+                                            </nodes>
+                                        </flow>
+                                        <!-- 相似度粗排 -->
+                                        <flow id="f2-3">
+                                            <nodes>
+                                                <work-node id="w2-3-1" bean="similarRoughSortWork" desc="相似度粗排"/>
+                                            </nodes>
+                                        </flow>
+                                    </flows>
+                                    <merge id="m2" bean="roughMergeWork" desc="分支合并"/>
+                                </parallel-node>
+                                <!-- 精排 -->
+                                <work-node id="w2-0" bean="accurateSortWork" desc="精排"/>
+                            </nodes>
+                        </flow>
+                    </flows>
+                </select-node>
+            </nodes>
+        </flow>
+    </flows>
+</flow-config>

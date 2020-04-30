@@ -1,5 +1,6 @@
 package com.simple.bizFlow.core.node;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
@@ -17,6 +18,7 @@ public abstract class Node implements Serializable {
     @XStreamAsAttribute
     private String bean;
     @XStreamAsAttribute
+    @XStreamAlias("desc")
     private String description;
     private List<Property> properties;
 

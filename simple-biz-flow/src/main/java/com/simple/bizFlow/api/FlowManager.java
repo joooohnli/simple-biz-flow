@@ -1,6 +1,5 @@
 package com.simple.bizFlow.api;
 
-import com.thoughtworks.xstream.XStream;
 import com.simple.bizFlow.api.component.context.FlowContext;
 import com.simple.bizFlow.api.component.payload.Payload;
 import com.simple.bizFlow.core.context.SysContext;
@@ -8,6 +7,7 @@ import com.simple.bizFlow.core.context.SysContextHolder;
 import com.simple.bizFlow.core.exception.FlowException;
 import com.simple.bizFlow.core.executor.NodeExecutorFactory;
 import com.simple.bizFlow.core.node.*;
+import com.thoughtworks.xstream.XStream;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,6 +23,7 @@ import static com.simple.bizFlow.core.constants.FlowConstant.LOG_DIGEST;
 
 /**
  * biz flow entrance
+ *
  * @author joooohnli  2020-01-09 10:25 AM
  */
 public class FlowManager {
@@ -34,9 +35,10 @@ public class FlowManager {
 
     /**
      * execute a flow
+     *
      * @param context inited business context
      * @param flowId
-     * @param <T> output
+     * @param <T>     output
      * @return
      */
     public static <T extends Payload> T execute(FlowContext context, String flowId) {
@@ -59,8 +61,14 @@ public class FlowManager {
         return execute;
     }
 
+
+    public static Flow getFlow(String flowId) {
+        return flows.get(flowId);
+    }
+
     /**
      * reload flows from xml file
+     *
      * @param xml
      * @param check
      */
@@ -80,6 +88,7 @@ public class FlowManager {
 
     /**
      * reload flows from string
+     *
      * @param filename
      * @param check
      */

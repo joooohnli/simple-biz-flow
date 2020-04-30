@@ -1,0 +1,358 @@
+<svg width="1380px" height="1345px"
+ viewBox="0.00 0.00 1380.26 1344.52" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0) translate(4 1340.52)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-1340.52 1376.26,-1340.52 1376.26,4 -4,4"/>
+<g id="clust2" class="cluster">
+<title>cluster_f1</title>
+<polygon fill="none" stroke="#b0e2ff" points="30.26,-194.05 30.26,-900.4 636.26,-900.4 636.26,-194.05 30.26,-194.05"/>
+<text text-anchor="middle" x="333.26" y="-885.2" font-family="Times,serif" font-size="14.00">f1</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_f1&#45;1</title>
+<polygon fill="none" stroke="#b0e2ff" points="96.26,-662.57 96.26,-779.2 278.26,-779.2 278.26,-662.57 96.26,-662.57"/>
+<text text-anchor="middle" x="187.26" y="-764" font-family="Times,serif" font-size="14.00">f1&#45;1</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_f1&#45;2</title>
+<polygon fill="none" stroke="#b0e2ff" points="50.26,-423.31 50.26,-654.57 350.26,-654.57 350.26,-423.31 50.26,-423.31"/>
+<text text-anchor="middle" x="200.26" y="-639.37" font-family="Times,serif" font-size="14.00">f1&#45;2</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_f1&#45;3</title>
+<polygon fill="none" stroke="#b0e2ff" points="358.26,-423.31 358.26,-779.2 628.26,-779.2 628.26,-423.31 358.26,-423.31"/>
+<text text-anchor="middle" x="493.26" y="-764" font-family="Times,serif" font-size="14.00">f1&#45;3</text>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_f2</title>
+<polygon fill="none" stroke="#b0e2ff" points="644.26,-423.31 644.26,-900.4 1364.26,-900.4 1364.26,-423.31 644.26,-423.31"/>
+<text text-anchor="middle" x="1004.26" y="-885.2" font-family="Times,serif" font-size="14.00">f2</text>
+</g>
+<g id="clust9" class="cluster">
+<title>cluster_f2&#45;1</title>
+<polygon fill="none" stroke="#b0e2ff" points="652.26,-662.57 652.26,-779.2 884.26,-779.2 884.26,-662.57 652.26,-662.57"/>
+<text text-anchor="middle" x="768.26" y="-764" font-family="Times,serif" font-size="14.00">f2&#45;1</text>
+</g>
+<g id="clust10" class="cluster">
+<title>cluster_f2&#45;2</title>
+<polygon fill="none" stroke="#b0e2ff" points="892.26,-662.57 892.26,-779.2 1126.26,-779.2 1126.26,-662.57 892.26,-662.57"/>
+<text text-anchor="middle" x="1009.26" y="-764" font-family="Times,serif" font-size="14.00">f2&#45;2</text>
+</g>
+<g id="clust11" class="cluster">
+<title>cluster_f2&#45;3</title>
+<polygon fill="none" stroke="#b0e2ff" points="1134.26,-662.57 1134.26,-779.2 1356.26,-779.2 1356.26,-662.57 1134.26,-662.57"/>
+<text text-anchor="middle" x="1245.26" y="-764" font-family="Times,serif" font-size="14.00">f2&#45;3</text>
+</g>
+<!-- flow -->
+<g id="node1" class="node">
+<title>flow</title>
+<ellipse fill="lightgrey" stroke="black" cx="630.26" cy="-1310.69" rx="25.67" ry="25.67"/>
+<text text-anchor="middle" x="630.26" y="-1306.49" font-family="Times,serif" font-size="14.00">flow</text>
+</g>
+<!-- w0&#45;1 -->
+<g id="node2" class="node">
+<title>w0&#45;1</title>
+<ellipse fill="lightgrey" stroke="black" cx="630.26" cy="-1209.54" rx="90.58" ry="39.13"/>
+<text text-anchor="middle" x="630.26" y="-1222.14" font-family="Times,serif" font-size="14.00">w0&#45;1</text>
+<text text-anchor="middle" x="630.26" y="-1208.14" font-family="Times,serif" font-size="14.00">queryUserInfoWork</text>
+<text text-anchor="middle" x="630.26" y="-1194.14" font-family="Times,serif" font-size="14.00">获取用户信息</text>
+</g>
+<!-- flow&#45;&gt;w0&#45;1 -->
+<g id="edge22" class="edge">
+<title>flow&#45;&gt;w0&#45;1</title>
+<path fill="none" stroke="black" d="M630.26,-1284.67C630.26,-1276.92 630.26,-1268.1 630.26,-1259.31"/>
+<polygon fill="black" stroke="black" points="633.76,-1259.07 630.26,-1249.07 626.76,-1259.07 633.76,-1259.07"/>
+</g>
+<!-- w0&#45;2 -->
+<g id="node3" class="node">
+<title>w0&#45;2</title>
+<ellipse fill="lightgrey" stroke="black" cx="630.26" cy="-1094.91" rx="55.09" ry="39.13"/>
+<text text-anchor="middle" x="630.26" y="-1107.51" font-family="Times,serif" font-size="14.00">w0&#45;2</text>
+<text text-anchor="middle" x="630.26" y="-1093.51" font-family="Times,serif" font-size="14.00">recallWork</text>
+<text text-anchor="middle" x="630.26" y="-1079.51" font-family="Times,serif" font-size="14.00">召回</text>
+</g>
+<!-- w0&#45;1&#45;&gt;w0&#45;2 -->
+<g id="edge23" class="edge">
+<title>w0&#45;1&#45;&gt;w0&#45;2</title>
+<path fill="none" stroke="black" d="M630.26,-1170.1C630.26,-1161.94 630.26,-1153.23 630.26,-1144.75"/>
+<polygon fill="black" stroke="black" points="633.76,-1144.57 630.26,-1134.57 626.76,-1144.57 633.76,-1144.57"/>
+</g>
+<!-- s1 -->
+<g id="node5" class="node">
+<title>s1</title>
+<polygon fill="darkseagreen" stroke="darkseagreen" points="630.26,-1019.7 543.73,-964 630.26,-908.3 716.79,-964 630.26,-1019.7"/>
+<text text-anchor="middle" x="630.26" y="-976.6" font-family="Times,serif" font-size="14.00">s1</text>
+<text text-anchor="middle" x="630.26" y="-962.6" font-family="Times,serif" font-size="14.00">flowSelector</text>
+<text text-anchor="middle" x="630.26" y="-948.6" font-family="Times,serif" font-size="14.00">流程选择</text>
+</g>
+<!-- w0&#45;2&#45;&gt;s1 -->
+<g id="edge24" class="edge">
+<title>w0&#45;2&#45;&gt;s1</title>
+<path fill="none" stroke="black" d="M630.26,-1055.58C630.26,-1047.47 630.26,-1038.7 630.26,-1029.92"/>
+<polygon fill="black" stroke="black" points="633.76,-1029.64 630.26,-1019.64 626.76,-1029.64 633.76,-1029.64"/>
+</g>
+<!-- flow_end -->
+<g id="node4" class="node">
+<title>flow_end</title>
+<ellipse fill="lightgrey" stroke="black" cx="661.26" cy="-47.02" rx="43.05" ry="43.05"/>
+<ellipse fill="none" stroke="black" cx="661.26" cy="-47.02" rx="47.05" ry="47.05"/>
+<text text-anchor="middle" x="661.26" y="-42.82" font-family="Times,serif" font-size="14.00">flow_end</text>
+</g>
+<!-- p1 -->
+<g id="node8" class="node">
+<title>p1</title>
+<polygon fill="#ff7f00" stroke="#ff7f00" points="480.05,-870.5 361.08,-870.5 330.47,-787.1 449.45,-787.1 480.05,-870.5"/>
+<text text-anchor="middle" x="405.26" y="-834.4" font-family="Times,serif" font-size="14.00">p1</text>
+<text text-anchor="middle" x="405.26" y="-820.4" font-family="Times,serif" font-size="14.00">并行排序</text>
+</g>
+<!-- s1&#45;&gt;p1 -->
+<g id="edge18" class="edge">
+<title>s1&#45;&gt;p1</title>
+<path fill="none" stroke="black" d="M585.81,-936.68C556.41,-919.28 517.08,-896 482.64,-875.6"/>
+<polygon fill="black" stroke="black" points="484.38,-872.57 473.99,-870.49 480.82,-878.59 484.38,-872.57"/>
+</g>
+<!-- p2 -->
+<g id="node17" class="node">
+<title>p2</title>
+<polygon fill="#ff7f00" stroke="#ff7f00" points="963.05,-870.5 844.08,-870.5 813.47,-787.1 932.45,-787.1 963.05,-870.5"/>
+<text text-anchor="middle" x="888.26" y="-834.4" font-family="Times,serif" font-size="14.00">p2</text>
+<text text-anchor="middle" x="888.26" y="-820.4" font-family="Times,serif" font-size="14.00">并行排序</text>
+</g>
+<!-- s1&#45;&gt;p2 -->
+<g id="edge20" class="edge">
+<title>s1&#45;&gt;p2</title>
+<path fill="none" stroke="black" d="M677.58,-938.57C720.27,-916.53 783.23,-884.02 829.2,-860.29"/>
+<polygon fill="black" stroke="black" points="830.88,-863.36 838.16,-855.67 827.67,-857.14 830.88,-863.36"/>
+</g>
+<!-- s1_end -->
+<g id="node6" class="node">
+<title>s1_end</title>
+<ellipse fill="lightgrey" stroke="black" cx="661.26" cy="-148.05" rx="35.32" ry="18"/>
+<text text-anchor="middle" x="661.26" y="-143.85" font-family="Times,serif" font-size="14.00">s1_end</text>
+</g>
+<!-- s1_end&#45;&gt;flow_end -->
+<g id="edge25" class="edge">
+<title>s1_end&#45;&gt;flow_end</title>
+<path fill="none" stroke="black" d="M661.26,-129.8C661.26,-122.56 661.26,-113.68 661.26,-104.48"/>
+<polygon fill="black" stroke="black" points="664.76,-104.43 661.26,-94.43 657.76,-104.43 664.76,-104.43"/>
+</g>
+<!-- replenish -->
+<g id="node7" class="node">
+<title>replenish</title>
+<ellipse fill="lightgrey" stroke="black" cx="406.26" cy="-241.36" rx="69.21" ry="39.13"/>
+<text text-anchor="middle" x="406.26" y="-253.96" font-family="Times,serif" font-size="14.00">replenish</text>
+<text text-anchor="middle" x="406.26" y="-239.96" font-family="Times,serif" font-size="14.00">replenishWork</text>
+<text text-anchor="middle" x="406.26" y="-225.96" font-family="Times,serif" font-size="14.00">补足</text>
+</g>
+<!-- replenish&#45;&gt;s1_end -->
+<g id="edge19" class="edge">
+<title>replenish&#45;&gt;s1_end</title>
+<path fill="none" stroke="black" d="M464.13,-219.64C512.96,-202.15 581.46,-177.62 623.52,-162.56"/>
+<polygon fill="black" stroke="black" points="624.87,-165.8 633.1,-159.13 622.51,-159.21 624.87,-165.8"/>
+</g>
+<!-- w1&#45;1&#45;1 -->
+<g id="node10" class="node">
+<title>w1&#45;1&#45;1</title>
+<ellipse fill="lightgrey" stroke="black" cx="187.26" cy="-709.88" rx="82.57" ry="39.13"/>
+<text text-anchor="middle" x="187.26" y="-722.48" font-family="Times,serif" font-size="14.00">w1&#45;1&#45;1</text>
+<text text-anchor="middle" x="187.26" y="-708.48" font-family="Times,serif" font-size="14.00">accurateSortWork</text>
+<text text-anchor="middle" x="187.26" y="-694.48" font-family="Times,serif" font-size="14.00">精排</text>
+</g>
+<!-- p1&#45;&gt;w1&#45;1&#45;1 -->
+<g id="edge4" class="edge">
+<title>p1&#45;&gt;w1&#45;1&#45;1</title>
+<path fill="none" stroke="black" d="M337.84,-807.31C316.86,-799.75 294.05,-790.28 274.26,-779.2 260.24,-771.35 246.09,-761.33 233.4,-751.4"/>
+<polygon fill="black" stroke="black" points="235.28,-748.42 225.28,-744.91 230.91,-753.89 235.28,-748.42"/>
+</g>
+<!-- w1&#45;2&#45;1 -->
+<g id="node11" class="node">
+<title>w1&#45;2&#45;1</title>
+<ellipse fill="lightgrey" stroke="black" cx="200.26" cy="-585.25" rx="141.9" ry="39.13"/>
+<text text-anchor="middle" x="200.26" y="-597.85" font-family="Times,serif" font-size="14.00">w1&#45;2&#45;1</text>
+<text text-anchor="middle" x="200.26" y="-583.85" font-family="Times,serif" font-size="14.00">newRegOldUserRoughSortWork</text>
+<text text-anchor="middle" x="200.26" y="-569.85" font-family="Times,serif" font-size="14.00">粗排</text>
+</g>
+<!-- p1&#45;&gt;w1&#45;2&#45;1 -->
+<g id="edge6" class="edge">
+<title>p1&#45;&gt;w1&#45;2&#45;1</title>
+<path fill="none" stroke="black" d="M361.09,-787.15C358.71,-784.52 356.42,-781.86 354.26,-779.2 315.9,-731.88 320.91,-709.66 282.26,-662.57 273.04,-651.33 262.21,-640.15 251.5,-629.95"/>
+<polygon fill="black" stroke="black" points="253.82,-627.33 244.13,-623.05 249.04,-632.44 253.82,-627.33"/>
+</g>
+<!-- w1&#45;3&#45;1 -->
+<g id="node13" class="node">
+<title>w1&#45;3&#45;1</title>
+<ellipse fill="lightgrey" stroke="black" cx="493.26" cy="-709.88" rx="127.2" ry="39.13"/>
+<text text-anchor="middle" x="493.26" y="-722.48" font-family="Times,serif" font-size="14.00">w1&#45;3&#45;1</text>
+<text text-anchor="middle" x="493.26" y="-708.48" font-family="Times,serif" font-size="14.00">newRegUserRoughSortWork</text>
+<text text-anchor="middle" x="493.26" y="-694.48" font-family="Times,serif" font-size="14.00">粗排</text>
+</g>
+<!-- p1&#45;&gt;w1&#45;3&#45;1 -->
+<g id="edge8" class="edge">
+<title>p1&#45;&gt;w1&#45;3&#45;1</title>
+<path fill="none" stroke="black" d="M436.04,-786.91C443.4,-777.13 451.3,-766.64 458.81,-756.66"/>
+<polygon fill="black" stroke="black" points="461.79,-758.52 465.01,-748.42 456.2,-754.31 461.79,-758.52"/>
+</g>
+<!-- m1 -->
+<g id="node9" class="node">
+<title>m1</title>
+<ellipse fill="lightgrey" stroke="black" cx="357.26" cy="-355.99" rx="91.33" ry="39.13"/>
+<text text-anchor="middle" x="357.26" y="-368.59" font-family="Times,serif" font-size="14.00">m1</text>
+<text text-anchor="middle" x="357.26" y="-354.59" font-family="Times,serif" font-size="14.00">newRegMergeWork</text>
+<text text-anchor="middle" x="357.26" y="-340.59" font-family="Times,serif" font-size="14.00">分支合并</text>
+</g>
+<!-- m1&#45;&gt;replenish -->
+<g id="edge10" class="edge">
+<title>m1&#45;&gt;replenish</title>
+<path fill="none" stroke="black" d="M373.71,-317.18C377.63,-308.16 381.86,-298.44 385.94,-289.09"/>
+<polygon fill="black" stroke="black" points="389.16,-290.45 389.94,-279.89 382.74,-287.66 389.16,-290.45"/>
+</g>
+<!-- w1&#45;1&#45;1&#45;&gt;m1 -->
+<g id="edge5" class="edge">
+<title>w1&#45;1&#45;1&#45;&gt;m1</title>
+<path fill="none" stroke="black" d="M109.43,-696.69C85.13,-688.82 60.88,-675.87 46.26,-654.57 -11.9,-569.83 -18.4,-503.21 46.26,-423.31 72.61,-390.74 177.02,-373.48 257.67,-364.83"/>
+<polygon fill="black" stroke="black" points="258.3,-368.28 267.88,-363.76 257.57,-361.32 258.3,-368.28"/>
+</g>
+<!-- w1&#45;2&#45;2 -->
+<g id="node12" class="node">
+<title>w1&#45;2&#45;2</title>
+<ellipse fill="lightgrey" stroke="black" cx="229.26" cy="-470.62" rx="82.57" ry="39.13"/>
+<text text-anchor="middle" x="229.26" y="-483.22" font-family="Times,serif" font-size="14.00">w1&#45;2&#45;2</text>
+<text text-anchor="middle" x="229.26" y="-469.22" font-family="Times,serif" font-size="14.00">accurateSortWork</text>
+<text text-anchor="middle" x="229.26" y="-455.22" font-family="Times,serif" font-size="14.00">精排</text>
+</g>
+<!-- w1&#45;2&#45;1&#45;&gt;w1&#45;2&#45;2 -->
+<g id="edge1" class="edge">
+<title>w1&#45;2&#45;1&#45;&gt;w1&#45;2&#45;2</title>
+<path fill="none" stroke="black" d="M210.16,-545.81C212.33,-537.38 214.65,-528.36 216.91,-519.61"/>
+<polygon fill="black" stroke="black" points="220.3,-520.45 219.41,-509.9 213.52,-518.71 220.3,-520.45"/>
+</g>
+<!-- w1&#45;2&#45;2&#45;&gt;m1 -->
+<g id="edge7" class="edge">
+<title>w1&#45;2&#45;2&#45;&gt;m1</title>
+<path fill="none" stroke="black" d="M268.01,-435.52C281.3,-423.83 296.31,-410.62 310.19,-398.42"/>
+<polygon fill="black" stroke="black" points="312.56,-400.99 317.76,-391.75 307.94,-395.73 312.56,-400.99"/>
+</g>
+<!-- w1&#45;3&#45;2 -->
+<g id="node14" class="node">
+<title>w1&#45;3&#45;2</title>
+<ellipse fill="lightgrey" stroke="black" cx="488.26" cy="-585.25" rx="82.57" ry="39.13"/>
+<text text-anchor="middle" x="488.26" y="-597.85" font-family="Times,serif" font-size="14.00">w1&#45;3&#45;2</text>
+<text text-anchor="middle" x="488.26" y="-583.85" font-family="Times,serif" font-size="14.00">accurateSortWork</text>
+<text text-anchor="middle" x="488.26" y="-569.85" font-family="Times,serif" font-size="14.00">精排</text>
+</g>
+<!-- w1&#45;3&#45;1&#45;&gt;w1&#45;3&#45;2 -->
+<g id="edge2" class="edge">
+<title>w1&#45;3&#45;1&#45;&gt;w1&#45;3&#45;2</title>
+<path fill="none" stroke="black" d="M491.69,-670.42C491.23,-659.12 490.72,-646.61 490.24,-634.77"/>
+<polygon fill="black" stroke="black" points="493.73,-634.43 489.82,-624.58 486.73,-634.72 493.73,-634.43"/>
+</g>
+<!-- w1&#45;3&#45;3 -->
+<g id="node15" class="node">
+<title>w1&#45;3&#45;3</title>
+<ellipse fill="lightgrey" stroke="black" cx="484.26" cy="-470.62" rx="109.48" ry="39.13"/>
+<text text-anchor="middle" x="484.26" y="-483.22" font-family="Times,serif" font-size="14.00">w1&#45;3&#45;3</text>
+<text text-anchor="middle" x="484.26" y="-469.22" font-family="Times,serif" font-size="14.00">newRegRepeatSortWork</text>
+<text text-anchor="middle" x="484.26" y="-455.22" font-family="Times,serif" font-size="14.00">重排</text>
+</g>
+<!-- w1&#45;3&#45;2&#45;&gt;w1&#45;3&#45;3 -->
+<g id="edge3" class="edge">
+<title>w1&#45;3&#45;2&#45;&gt;w1&#45;3&#45;3</title>
+<path fill="none" stroke="black" d="M486.9,-545.81C486.61,-537.65 486.3,-528.94 486,-520.46"/>
+<polygon fill="black" stroke="black" points="489.49,-520.15 485.63,-510.28 482.49,-520.4 489.49,-520.15"/>
+</g>
+<!-- w1&#45;3&#45;3&#45;&gt;m1 -->
+<g id="edge9" class="edge">
+<title>w1&#45;3&#45;3&#45;&gt;m1</title>
+<path fill="none" stroke="black" d="M444.08,-433.99C431.32,-422.67 417.11,-410.07 403.93,-398.38"/>
+<polygon fill="black" stroke="black" points="406.12,-395.64 396.32,-391.63 401.48,-400.88 406.12,-395.64"/>
+</g>
+<!-- w2&#45;0 -->
+<g id="node16" class="node">
+<title>w2&#45;0</title>
+<ellipse fill="lightgrey" stroke="black" cx="812.26" cy="-470.62" rx="82.57" ry="39.13"/>
+<text text-anchor="middle" x="812.26" y="-483.22" font-family="Times,serif" font-size="14.00">w2&#45;0</text>
+<text text-anchor="middle" x="812.26" y="-469.22" font-family="Times,serif" font-size="14.00">accurateSortWork</text>
+<text text-anchor="middle" x="812.26" y="-455.22" font-family="Times,serif" font-size="14.00">精排</text>
+</g>
+<!-- w2&#45;0&#45;&gt;s1_end -->
+<g id="edge21" class="edge">
+<title>w2&#45;0&#45;&gt;s1_end</title>
+<path fill="none" stroke="black" d="M794.5,-431.91C763.46,-366.02 700.14,-231.58 673.5,-175.03"/>
+<polygon fill="black" stroke="black" points="676.54,-173.28 669.12,-165.72 670.21,-176.26 676.54,-173.28"/>
+</g>
+<!-- w2&#45;1&#45;1 -->
+<g id="node19" class="node">
+<title>w2&#45;1&#45;1</title>
+<ellipse fill="lightgrey" stroke="black" cx="768.26" cy="-709.88" rx="108.33" ry="39.13"/>
+<text text-anchor="middle" x="768.26" y="-722.48" font-family="Times,serif" font-size="14.00">w2&#45;1&#45;1</text>
+<text text-anchor="middle" x="768.26" y="-708.48" font-family="Times,serif" font-size="14.00">oneWayRoughSortWork</text>
+<text text-anchor="middle" x="768.26" y="-694.48" font-family="Times,serif" font-size="14.00">单向粗排</text>
+</g>
+<!-- p2&#45;&gt;w2&#45;1&#45;1 -->
+<g id="edge11" class="edge">
+<title>p2&#45;&gt;w2&#45;1&#45;1</title>
+<path fill="none" stroke="black" d="M846.29,-786.91C835.42,-776.31 823.67,-764.87 812.68,-754.16"/>
+<polygon fill="black" stroke="black" points="814.81,-751.35 805.21,-746.88 809.93,-756.37 814.81,-751.35"/>
+</g>
+<!-- w2&#45;2&#45;1 -->
+<g id="node20" class="node">
+<title>w2&#45;2&#45;1</title>
+<ellipse fill="lightgrey" stroke="black" cx="1009.26" cy="-709.88" rx="108.94" ry="39.13"/>
+<text text-anchor="middle" x="1009.26" y="-722.48" font-family="Times,serif" font-size="14.00">w2&#45;2&#45;1</text>
+<text text-anchor="middle" x="1009.26" y="-708.48" font-family="Times,serif" font-size="14.00">twoWayRoughSortWork</text>
+<text text-anchor="middle" x="1009.26" y="-694.48" font-family="Times,serif" font-size="14.00">双向粗排</text>
+</g>
+<!-- p2&#45;&gt;w2&#45;2&#45;1 -->
+<g id="edge13" class="edge">
+<title>p2&#45;&gt;w2&#45;2&#45;1</title>
+<path fill="none" stroke="black" d="M930.58,-786.91C941.65,-776.21 953.61,-764.65 964.79,-753.85"/>
+<polygon fill="black" stroke="black" points="967.25,-756.35 972.01,-746.88 962.38,-751.31 967.25,-756.35"/>
+</g>
+<!-- w2&#45;3&#45;1 -->
+<g id="node21" class="node">
+<title>w2&#45;3&#45;1</title>
+<ellipse fill="lightgrey" stroke="black" cx="1245.26" cy="-709.88" rx="103.43" ry="39.13"/>
+<text text-anchor="middle" x="1245.26" y="-722.48" font-family="Times,serif" font-size="14.00">w2&#45;3&#45;1</text>
+<text text-anchor="middle" x="1245.26" y="-708.48" font-family="Times,serif" font-size="14.00">similarRoughSortWork</text>
+<text text-anchor="middle" x="1245.26" y="-694.48" font-family="Times,serif" font-size="14.00">相似度粗排</text>
+</g>
+<!-- p2&#45;&gt;w2&#45;3&#45;1 -->
+<g id="edge15" class="edge">
+<title>p2&#45;&gt;w2&#45;3&#45;1</title>
+<path fill="none" stroke="black" d="M945.53,-821.83C995.55,-815.33 1069.47,-802.58 1130.26,-779.2 1150.01,-771.61 1170.26,-760.77 1188.16,-749.95"/>
+<polygon fill="black" stroke="black" points="1190.07,-752.89 1196.75,-744.66 1186.4,-746.93 1190.07,-752.89"/>
+</g>
+<!-- m2 -->
+<g id="node18" class="node">
+<title>m2</title>
+<ellipse fill="lightgrey" stroke="black" cx="888.26" cy="-585.25" rx="81.65" ry="39.13"/>
+<text text-anchor="middle" x="888.26" y="-597.85" font-family="Times,serif" font-size="14.00">m2</text>
+<text text-anchor="middle" x="888.26" y="-583.85" font-family="Times,serif" font-size="14.00">roughMergeWork</text>
+<text text-anchor="middle" x="888.26" y="-569.85" font-family="Times,serif" font-size="14.00">分支合并</text>
+</g>
+<!-- m2&#45;&gt;w2&#45;0 -->
+<g id="edge17" class="edge">
+<title>m2&#45;&gt;w2&#45;0</title>
+<path fill="none" stroke="black" d="M863.59,-547.69C856.95,-537.85 849.69,-527.09 842.78,-516.85"/>
+<polygon fill="black" stroke="black" points="845.57,-514.72 837.07,-508.39 839.77,-518.64 845.57,-514.72"/>
+</g>
+<!-- w2&#45;1&#45;1&#45;&gt;m2 -->
+<g id="edge12" class="edge">
+<title>w2&#45;1&#45;1&#45;&gt;m2</title>
+<path fill="none" stroke="black" d="M803.94,-672.42C817.47,-658.59 832.99,-642.74 846.99,-628.42"/>
+<polygon fill="black" stroke="black" points="849.67,-630.7 854.16,-621.1 844.67,-625.8 849.67,-630.7"/>
+</g>
+<!-- w2&#45;2&#45;1&#45;&gt;m2 -->
+<g id="edge14" class="edge">
+<title>w2&#45;2&#45;1&#45;&gt;m2</title>
+<path fill="none" stroke="black" d="M973.29,-672.42C959.64,-658.59 943.99,-642.74 929.87,-628.42"/>
+<polygon fill="black" stroke="black" points="932.16,-625.76 922.65,-621.1 927.18,-630.68 932.16,-625.76"/>
+</g>
+<!-- w2&#45;3&#45;1&#45;&gt;m2 -->
+<g id="edge16" class="edge">
+<title>w2&#45;3&#45;1&#45;&gt;m2</title>
+<path fill="none" stroke="black" d="M1176.88,-680.33C1161.62,-674.25 1145.46,-668.01 1130.26,-662.57 1076.24,-643.2 1014.53,-623.78 966.95,-609.38"/>
+<polygon fill="black" stroke="black" points="967.9,-606.01 957.32,-606.48 965.88,-612.72 967.9,-606.01"/>
+</g>
+</g>
+</svg>

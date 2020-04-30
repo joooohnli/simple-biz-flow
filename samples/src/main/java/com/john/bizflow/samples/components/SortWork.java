@@ -20,12 +20,7 @@ public class SortWork implements Work<MyPayload, MyPayload> {
     public MyPayload work(FlowContext context, MyPayload input, Map<String, String> properties) {
         List<User> users = new ArrayList<>(input.getUsers());
 
-        users.sort(new Comparator<User>() {
-            @Override
-            public int compare(User o1, User o2) {
-                return o1.getMid() - o2.getMid();
-            }
-        });
+        users.sort(Comparator.comparingInt(User::getMid));
 
         String s = properties.get("x");
 
