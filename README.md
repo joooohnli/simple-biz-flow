@@ -115,7 +115,17 @@ FlowContext flowContext = new MyFlowContext(new User().setMid(0).setLabel("super
 MyPayload execute = FlowManager.execute(flowContext, "f1");
 ```
 
-# monitor
+# Graph
+Use `GraphUtil` to generate flow diagram. It's usefull when you want to demonstrate or self-check your business logic .
+
+```
+    GraphUtil.drawGraph(FlowManager.getFlow("flow"), "/Users/john/Downloads/flow.svg");
+```
+
+Like this one in samples:
+![flow_diagram](samples/src/main/resources/flow.svg)
+
+# Monitor
 
 ## digest log
 ```
